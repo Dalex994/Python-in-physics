@@ -1,4 +1,4 @@
-﻿from pylab import *
+from pylab import *
 
 # Données modifiables
 A = 5	# amplitude suivant z, en dm (entre 0 et Amax)
@@ -29,6 +29,7 @@ ylabel("z (en dm)")
 grid(True)
 ylim(-Amax, Amax)
 xlim(0, tmax)
+text(0.29,-9.1, "Amplitude A=5dm" + "     Période T=3s")
 
 fig.add_subplot(2, 1, 2)         # en xM
 plot(t, z(t - 1000*xM/v))
